@@ -10,13 +10,14 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "rootDir": "./src",
+    "rootDir": ".",
     "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
+    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"],
+    "jsx": "preserve"
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }
