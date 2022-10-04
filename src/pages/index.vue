@@ -1,4 +1,9 @@
 <script setup>
+import {
+  TwitterOutlined,
+  YoutubeOutlined,
+  FileOutlined,
+} from '@ant-design/icons-vue/lib'
 import Layout from '~/components/Layout.vue'
 </script>
 
@@ -14,7 +19,7 @@ import Layout from '~/components/Layout.vue'
             <h1>Kosen-Sparkle</h1>
             <div>
               <p>
-                Kosen-Sparkleは高専卒業生によって設立された高専生の多様なキャリアをサポートするための学生組織です
+                Kosen-Sparkleは高専卒業生によって設立された高専生の多様なキャリアをサポートするための学生組織です。
               </p>
               <ul>
                 <li>高専以外でも活躍したい</li>
@@ -26,7 +31,11 @@ import Layout from '~/components/Layout.vue'
               </p>
             </div>
           </div>
-          <div class="contacts"></div>
+          <div class="contacts">
+            <TwitterOutlined class="icon twitter-icon" />
+            <YoutubeOutlined class="icon youtube-icon" />
+            <FileOutlined class="icon note-icon" />
+          </div>
         </div>
       </div>
     </div>
@@ -69,19 +78,38 @@ img {
   width: 600px;
   height: 400px;
   border: 1px solid;
-  padding: 20px 40px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .description {
-  border: 1px solid;
+  /* border: 1px solid; */
+  font-size: medium;
 }
 
 .contacts {
-  border: 1px solid;
+  /* border: 1px solid; */
   flex-grow: 1;
-  justify-content: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 84px;
+  /* border: 1px solid; */
+}
+.twitter-icon {
+  color: #08c;
+}
+.youtube-icon {
+  color: #c00;
+}
+.note-icon {
+  color: #0c8;
+  transform: scale(-1, 1);
 }
 </style>
