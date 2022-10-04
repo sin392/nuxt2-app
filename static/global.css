@@ -1,0 +1,10 @@
+#__nuxt,
+#__layout {
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --main-bg-color: #fec000;
+  --font-color-on-main-bg: white;
+}
