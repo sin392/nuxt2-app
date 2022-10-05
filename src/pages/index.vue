@@ -17,7 +17,7 @@ import Layout from '~/components/Layout.vue'
               KOSEN <span class="accent-char">S</span>PARKLE
             </h1>
             <p class="sub-text">
-              For the kosen, By the kosen, Student Organization
+              For the Kosen, By the Kosen, Student Organization
             </p>
           </div>
           <div class="description">
