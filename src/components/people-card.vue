@@ -55,6 +55,7 @@ img {
 }
 .people-card-content {
   flex-grow: 1;
+  width: 100%;
   padding: 20px 30px;
   border-radius: 25px;
   box-shadow: 0 0 5px darkgray;
@@ -77,10 +78,15 @@ img {
 @media (max-width: 480px) {
   .people-card {
     width: 80%;
+    gap: 15px;
   }
   .people-card-header {
-    width: 40%;
-    height: 40%;
+    /* WHY: 実際には80pxにはなっていない */
+    width: 80px;
+    height: 100%;
+  }
+  img {
+    margin-top: 0;
   }
   .people-card-content {
     padding: 10px 20px;
