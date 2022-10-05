@@ -111,13 +111,14 @@ li {
     display: block;
   }
   .announce {
-    width: 100%;
+    width: 80%;
     font-size: smaller;
   }
   ul {
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 0;
+    padding-left: 10px;
   }
   li {
     font-size: small;
