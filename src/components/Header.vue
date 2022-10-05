@@ -4,11 +4,11 @@
     <nav>
       <ul>
         <!-- TODO: トップへの遷移はnavではなくロゴ画像とかで -->
-        <li>TOP</li>
-        <li>ABOUT</li>
-        <li>MEMBER</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+        <li><NuxtLink to="/">TOP</NuxtLink></li>
+        <li><NuxtLink to="/about">ABOUT</NuxtLink></li>
+        <li><NuxtLink to="/member">MEMBER</NuxtLink></li>
+        <li><NuxtLink to="/work">WORK</NuxtLink></li>
+        <li><NuxtLink to="/contact">CONTACT</NuxtLink></li>
       </ul>
     </nav>
   </header>
@@ -42,8 +42,10 @@ li {
 }
 #header-title,
 li {
-  cursor: pointer;
   user-select: none;
+}
+a {
+  color: white;
 }
 #header-title:hover,
 li:hover {
