@@ -31,6 +31,7 @@ export default {
       { name: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
+      { name: 'twitter:image', content: '/ogp.png' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
