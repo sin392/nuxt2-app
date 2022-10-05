@@ -4,6 +4,7 @@
     <nav>
       <ul>
         <li>About</li>
+        <li>Member</li>
         <li>Work</li>
         <li>Contact</li>
       </ul>
