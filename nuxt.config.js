@@ -2,6 +2,7 @@ export default {
   srcDir: 'src/',
 
   // Target: https://go.nuxtjs.dev/config-target
+  mode: 'universal',
   target: 'static',
   ssr: false,
 
@@ -10,13 +11,22 @@ export default {
     // title: 'nuxt2-app',
     title: 'Kosen-Sparkle',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'description', content: 'description' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'og:site_name', content: 'Kosen-Sparkle' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://kosen-sparkle.com' },
+      { name: 'og:title', content: 'Kosen-Sparkle' },
+      { name: 'og:description', content: 'description' },
+      { name: 'og:image', content: '/preview.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@kosen_sparkle' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
