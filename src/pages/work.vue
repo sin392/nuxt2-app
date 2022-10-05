@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper"><div>工事中</div></div>
+  <div class="wrapper"><div>Coming Soon ... !</div></div>
 </template>
 
 <style scoped>
