@@ -1,6 +1,4 @@
 <script setup>
-// Headerなどはhtmlの予約語として認識されるのでリネーム
-// import { Nuxt } from 'nuxt'
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 </script>
