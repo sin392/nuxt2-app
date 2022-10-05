@@ -36,6 +36,7 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Kosen-Sparkle HomePage' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
+      { name: 'twitter:image', content: 'https://kosen-sparkle.com/ogp.png' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
