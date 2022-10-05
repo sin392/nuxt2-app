@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 interface PeopleCardProps {
   name: string
   hobby: string
@@ -10,7 +11,7 @@ interface PeopleCardProps {
 const props = defineProps<PeopleCardProps>()
 // NOTE: "assetsに画像を置いている場合"、imgSrcをそのまま:srcに渡したりrequire(imgSrc)とするのはうまくいかなかった
 // const imgSrc = require(`~/assets/${props.imgFileName}`)
-const imgSrc = require(props.imgFileName)
+const imgSrc = computed(() => props.imgFileName)
 </script>
 
 <template>
