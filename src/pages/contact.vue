@@ -30,7 +30,7 @@
         </p>
       </div>
       <div class="announce">
-        <div>運営メンバーやイベント協力のご連絡なども募集しております！</div>
+        <div>運営メンバーやイベント協力のご連絡などもお待ちしております！</div>
         <ul>
           <li>キャリア支援や起業に興味がある</li>
           <li>組織運営の勉強がしてみたい</li>
@@ -124,11 +124,11 @@ li {
   ul {
     padding-top: 10px;
     padding-bottom: 10px;
-    gap: 0;
+    gap: 5px;
     padding-left: 10px;
   }
   li {
-    font-size: small;
+    font-size: smaller;
     font-weight: bold;
   }
 }
