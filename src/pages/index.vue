@@ -33,9 +33,17 @@ import Layout from '~/components/Layout.vue'
               </div>
             </div>
             <div class="contacts">
-              <TwitterOutlined class="icon twitter-icon" />
-              <YoutubeOutlined class="icon youtube-icon" />
-              <FileOutlined class="icon note-icon" />
+              <a href="https://twitter.com/KosenSparkle" target="_blank">
+                <TwitterOutlined class="icon twitter-icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
+              >
+                <YoutubeOutlined class="icon youtube-icon" target="_blank" />
+              </a>
+              <a href="https://note.com/kosen_sparkle" target="_blank">
+                <FileOutlined class="icon note-icon" />
+              </a>
             </div>
           </div>
         </div>
@@ -110,7 +118,6 @@ img {
 
 .icon {
   font-size: 84px;
-  cursor: pointer;
   /* border: 1px solid; */
 }
 .twitter-icon {
