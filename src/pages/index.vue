@@ -81,7 +81,12 @@ import {
   gap: 40px;
 }
 .icon {
+  padding: 10px;
   font-size: 60px;
+  border-radius: 50px;
+}
+.icon:hover {
+  box-shadow: 0 0 5px darkgray;
 }
 .twitter-icon {
   color: #08c;

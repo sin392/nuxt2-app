@@ -31,6 +31,7 @@
 }
 .accent {
   color: var(--main-bg-color);
+  text-shadow: 2px 2px 1px gainsboro;
 }
 
 .wrapper {
