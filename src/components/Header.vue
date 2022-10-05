@@ -40,6 +40,7 @@ li {
 #header-title,
 li {
   cursor: pointer;
+  user-select: none;
 }
 #header-title:hover,
 li:hover {
