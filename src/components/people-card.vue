@@ -23,9 +23,11 @@ const imgSrc = require(`~/assets/${props.imgFileName}`)
     <div class="people-card-content">
       <p class="name">{{ name }}</p>
       <div class="info-wrapper">
-        <div><span class="label">趣味：</span>{{ hobby }}</div>
-        <div><span class="label">得意分野：</span>{{ skill }}</div>
-        <div><span class="label">ひとこと：</span>{{ comment }}</div>
+        <div class="info"><span class="label">趣味：</span>{{ hobby }}</div>
+        <div class="info"><span class="label">得意分野：</span>{{ skill }}</div>
+        <div class="info">
+          <span class="label">ひとこと：</span>{{ comment }}
+        </div>
       </div>
     </div>
   </div>
@@ -71,5 +73,31 @@ img {
 .label {
   display: inline-block;
   min-width: 6rem;
+}
+@media (max-width: 480px) {
+  .people-card {
+    width: 80%;
+  }
+  .people-card-header {
+    width: 40%;
+    height: 40%;
+  }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: smaller;
+  }
+  .name {
+    font-size: large;
+    margin-bottom: 2px;
+  }
+  .info {
+    display: flex;
+  }
+  .label {
+    display: block;
+    min-width: 4rem;
+  }
 }
 </style>

@@ -94,4 +94,34 @@ li {
   font-size: x-large;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .wrapper {
+    width: 80%;
+  }
+  .flex-wrapper {
+    width: 100%;
+    padding-bottom: 0;
+    flex-grow: 0;
+  }
+  .info-wrapper {
+    padding: 0 100px;
+    font-size: large;
+  }
+  .label {
+    display: block;
+  }
+  .announce {
+    width: 100%;
+    font-size: smaller;
+  }
+  ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 0;
+  }
+  li {
+    font-size: small;
+    font-weight: bold;
+  }
+}
 </style>

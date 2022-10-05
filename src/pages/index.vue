@@ -98,4 +98,34 @@ import {
   color: #0c8;
   transform: scale(-1, 1);
 }
+@media (max-width: 480px) {
+  .wrapper {
+    height: 100%;
+    justify-content: start;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+  .main-part {
+    padding-top: 0;
+  }
+  .main-text {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .sub-text {
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  .description {
+    gap: 30px;
+  }
+  .contacts {
+    flex-grow: 1;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+}
 </style>

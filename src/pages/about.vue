@@ -33,7 +33,6 @@
   color: var(--main-bg-color);
   text-shadow: 2px 2px 1px gainsboro;
 }
-
 .wrapper {
   width: 70%;
   height: 80%;
@@ -44,5 +43,12 @@
   justify-content: center;
   gap: 50px;
   font-size: x-large;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    margin-top: 40px;
+    font-size: large;
+    width: 80%;
+  }
 }
 </style>

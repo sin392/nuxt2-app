@@ -16,6 +16,7 @@
 
 <style scoped>
 header {
+  width: 100%;
   height: 65px;
   padding: 0 40px;
   background-color: var(--main-bg-color);
@@ -50,5 +51,17 @@ a {
 #header-title:hover,
 li:hover {
   text-shadow: 1px 1px 2px black;
+}
+@media (max-width: 480px) {
+  header {
+    height: 50px;
+  }
+  ul {
+    gap: 10px;
+  }
+  li {
+    font-size: large;
+    letter-spacing: normal;
+  }
 }
 </style>

@@ -16,4 +16,9 @@
   font-size: xx-large;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .wrapper {
+    width: 80%;
+  }
+}
 </style>
