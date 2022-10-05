@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>Footer</div>
+    <div>2023 Kosen-Sparkle</div>
   </footer>
 </template>
 

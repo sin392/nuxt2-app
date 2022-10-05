@@ -1,12 +1,14 @@
 <template>
   <header>
-    <div id="header-title">Header</div>
+    <!-- <div id="header-title">KSparkle</div> -->
     <nav>
       <ul>
-        <li>About</li>
-        <li>Member</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <!-- TODO: トップへの遷移はnavではなくロゴ画像とかで -->
+        <li>TOP</li>
+        <li>ABOUT</li>
+        <li>MEMBER</li>
+        <li>WORK</li>
+        <li>CONTACT</li>
       </ul>
     </nav>
   </header>
@@ -14,28 +16,29 @@
 
 <style scoped>
 header {
-  height: 80px;
+  height: 65px;
   padding: 0 40px;
   background-color: var(--main-bg-color);
   color: var(--font-color-on-main-bg);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-shadow: 1px 1px 2px gray;
 }
-#header-title {
+/* #header-title {
   font-size: xx-large;
-}
+} */
 ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 80px;
 }
 li {
   height: fit-content !important;
   font-size: x-large;
   list-style-type: none;
+  letter-spacing: 0.5rem;
 }
 #header-title,
 li {
