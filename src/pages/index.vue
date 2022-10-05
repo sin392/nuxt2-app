@@ -12,39 +12,32 @@ import Layout from '~/components/Layout.vue'
     <div class="bg-image-wrapper">
       <div class="flex-wrapper">
         <div class="wrapper">
-          <div class="image-wrapper">
-            <img src="~/assets/logo_wb_circle.png" alt="ロゴ画像" />
+          <div class="main-part">
+            <h1 class="main-text">
+              KOSEN <span class="accent-char">S</span>PARKLE
+            </h1>
+            <p class="sub-text">
+              For the kosen, By the kosen, Student Organization
+            </p>
           </div>
-          <div class="description-wrapper">
-            <div class="description">
-              <h1>Kosen-Sparkle</h1>
-              <div>
-                <p>
-                  Kosen-Sparkleは高専卒業生によって設立された高専生の多様なキャリアをサポートするための学生組織です。
-                </p>
-                <ul>
-                  <li>高専以外でも活躍したい</li>
-                  <li>卒業後どんな仕事につけるのか</li>
-                  <li>工学以外の道はないのか</li>
-                </ul>
-                <p>
-                  高専生の様々なお悩みを解決すべく情報発信などを行なっていく予定です!!
-                </p>
-              </div>
-            </div>
-            <div class="contacts">
-              <a href="https://twitter.com/KosenSparkle" target="_blank">
-                <TwitterOutlined class="icon twitter-icon" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
-              >
-                <YoutubeOutlined class="icon youtube-icon" target="_blank" />
-              </a>
-              <a href="https://note.com/kosen_sparkle" target="_blank">
-                <FileOutlined class="icon note-icon" />
-              </a>
-            </div>
+          <div class="description">
+            <p>
+              高専卒業生によって設立され、高専生の多様なキャリアをサポートするための活動を行っています。
+            </p>
+            <p>
+              高専生の様々なお悩みを解決すべく情報発信などを行なっていく予定です!!
+            </p>
+          </div>
+          <div class="contacts">
+            <a href="https://twitter.com/KosenSparkle" target="_blank">
+              <TwitterOutlined class="icon twitter-icon" />
+            </a>
+            <a href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ">
+              <YoutubeOutlined class="icon youtube-icon" target="_blank" />
+            </a>
+            <a href="https://note.com/kosen_sparkle" target="_blank">
+              <FileOutlined class="icon note-icon" />
+            </a>
           </div>
         </div>
       </div>
@@ -69,56 +62,45 @@ import Layout from '~/components/Layout.vue'
   width: 80%;
   height: 80%;
   margin: auto;
-  /* border: 1px solid red; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-}
-
-.image-wrapper {
-  width: 400px;
-  height: 400px;
-  display: flex;
-}
-
-img {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  /* object-fit: contain; */
-  /* border: 1px solid red; */
-}
-
-.description-wrapper {
-  width: 600px;
-  height: 400px;
-  border: 1px solid;
-  border-radius: 25px;
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: white;
-}
-
-.description {
-  /* border: 1px solid; */
-  font-size: medium;
-}
-
-.contacts {
-  /* border: 1px solid; */
-  flex-grow: 1;
-  display: flex;
-  /* justify-content: center; */
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
-
+.main-part {
+  margin: 0;
+  padding-top: 80px;
+}
+.main-text {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 120px;
+  letter-spacing: 5px;
+}
+.accent-char {
+  color: var(--main-bg-color);
+}
+.sub-text {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.description {
+  font-family: Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .icon {
-  font-size: 84px;
-  /* border: 1px solid; */
+  font-size: 60px;
 }
 .twitter-icon {
   color: #08c;
