@@ -15,13 +15,12 @@ import Footer from '~/components/Footer.vue'
 
 <style scoped>
 #layout-wrapper {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 main {
   flex-grow: 1;
   display: flex;
-  overflow: scroll;
 }
 </style>
