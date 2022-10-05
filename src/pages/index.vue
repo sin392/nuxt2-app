@@ -71,6 +71,7 @@ import Layout from '~/components/Layout.vue'
 .main-part {
   margin: 0;
   padding-top: 80px;
+  user-select: none;
 }
 .main-text {
   margin: 0;
