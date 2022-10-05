@@ -100,11 +100,8 @@ import {
 }
 @media (max-width: 480px) {
   .wrapper {
-    height: 100%;
+    max-height: 100%;
     justify-content: start;
-    margin-top: 60px;
-    padding-bottom: 80px;
-    gap: 40px;
   }
   .main-part {
     padding-top: 0;

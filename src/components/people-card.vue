@@ -82,14 +82,17 @@ img {
     width: 40%;
     height: 40%;
   }
+  .people-card-content {
+    padding: 10px 20px;
+  }
   .info-wrapper {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-size: smaller;
+    font-size: x-small;
   }
   .name {
-    font-size: large;
+    font-size: medium;
     margin-bottom: 2px;
   }
   .info {

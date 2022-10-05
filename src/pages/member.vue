@@ -31,11 +31,13 @@ import PeopleCard from '~/components/people-card'
 <style scoped>
 .wrapper {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 480px) {
 }
 </style>

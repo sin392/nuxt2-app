@@ -35,7 +35,7 @@
 }
 .wrapper {
   width: 70%;
-  height: 80%;
+  max-height: 100%;
   margin: auto;
   text-align: center;
   display: flex;
@@ -46,9 +46,9 @@
 }
 @media (max-width: 480px) {
   .wrapper {
-    margin-top: 40px;
-    font-size: large;
+    font-size: medium;
     width: 80%;
+    gap: 30px;
   }
 }
 </style>

@@ -3,17 +3,17 @@
     <p class="title">お問い合わせ先</p>
     <div class="flex-wrapper">
       <div class="info-wrapper">
-        <p>
+        <p class="info">
           <span class="label">Email:</span>
           <a href="mailto:kosen.sparkle@gmail.com">kosen.sparkle@gmail.com</a>
         </p>
-        <p>
+        <p class="info">
           <span class="label">Twitter:</span>
           <a href="https://twitter.com/KosenSparkle" target="_blank">
             Kosen-Sparkle (@kosen_sparkle)
           </a>
         </p>
-        <p>
+        <p class="info">
           <span class="label">Youtube:</span>
           <a
             href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
@@ -22,7 +22,7 @@
             Kosen-Sparkleチャンネル
           </a>
         </p>
-        <p>
+        <p class="info">
           <span class="label">Note:</span>
           <a href="https://note.com/kosen_sparkle" target="_blank">
             Kosen_Sparkle
@@ -98,6 +98,9 @@ li {
   .wrapper {
     width: 80%;
   }
+  .title {
+    margin: 0;
+  }
   .flex-wrapper {
     width: 100%;
     padding-bottom: 0;
@@ -105,7 +108,10 @@ li {
   }
   .info-wrapper {
     padding: 0 100px;
-    font-size: large;
+    font-size: small;
+  }
+  .info {
+    margin: 0;
   }
   .label {
     display: block;
@@ -113,6 +119,7 @@ li {
   .announce {
     width: 80%;
     font-size: smaller;
+    margin-top: 20px;
   }
   ul {
     padding-top: 10px;
