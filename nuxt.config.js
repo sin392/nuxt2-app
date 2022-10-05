@@ -24,8 +24,8 @@ export default {
       { name: 'og:url', content: 'https://kosen-sparkle.com' },
       { name: 'og:title', content: 'Kosen-Sparkle' },
       { name: 'og:description', content: 'description' },
-      // NOTE: 本来は/preview.pngでいいはずだがうまくいかない
-      { name: 'og:image', content: 'https://kosen-sparkle.com/preview.png' },
+      // NOTE: TwitterのシェアデバッガーやOGP確認サイトだと認識されないことがある (Facebookだと認識する？)
+      { name: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
     ],
