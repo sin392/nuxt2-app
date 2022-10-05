@@ -7,7 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt2-app',
+    // title: 'nuxt2-app',
+    title: 'Kosen-Sparkle',
     htmlAttrs: {
       lang: 'en',
     },
