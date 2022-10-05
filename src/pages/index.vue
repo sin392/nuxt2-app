@@ -4,45 +4,42 @@ import {
   YoutubeOutlined,
   FileOutlined,
 } from '@ant-design/icons-vue/lib'
-import Layout from '~/components/Layout.vue'
 </script>
 
 <template>
-  <Layout>
-    <div class="bg-image-wrapper">
-      <div class="flex-wrapper">
-        <div class="wrapper">
-          <div class="main-part">
-            <h1 class="main-text">
-              KOSEN <span class="accent-char">S</span>PARKLE
-            </h1>
-            <p class="sub-text">
-              For the Kosen, By the Kosen, Student Organization
-            </p>
-          </div>
-          <div class="description">
-            <p>
-              高専卒業生によって設立され、高専生の多様なキャリアをサポートするための活動を行っています。
-            </p>
-            <p>
-              高専生の様々なお悩みを解決すべく情報発信などを行なっていく予定です!!
-            </p>
-          </div>
-          <div class="contacts">
-            <a href="https://twitter.com/KosenSparkle" target="_blank">
-              <TwitterOutlined class="icon twitter-icon" />
-            </a>
-            <a href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ">
-              <YoutubeOutlined class="icon youtube-icon" target="_blank" />
-            </a>
-            <a href="https://note.com/kosen_sparkle" target="_blank">
-              <FileOutlined class="icon note-icon" />
-            </a>
-          </div>
+  <div class="bg-image-wrapper">
+    <div class="flex-wrapper">
+      <div class="wrapper">
+        <div class="main-part">
+          <h1 class="main-text">
+            KOSEN <span class="accent-char">S</span>PARKLE
+          </h1>
+          <p class="sub-text">
+            For the Kosen, By the Kosen, Student Organization
+          </p>
+        </div>
+        <div class="description">
+          <p>
+            高専卒業生によって設立され、高専生の多様なキャリアをサポートするための活動を行っています。
+          </p>
+          <p>
+            高専生の様々なお悩みを解決すべく情報発信などを行なっていく予定です!!
+          </p>
+        </div>
+        <div class="contacts">
+          <a href="https://twitter.com/KosenSparkle" target="_blank">
+            <TwitterOutlined class="icon twitter-icon" />
+          </a>
+          <a href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ">
+            <YoutubeOutlined class="icon youtube-icon" target="_blank" />
+          </a>
+          <a href="https://note.com/kosen_sparkle" target="_blank">
+            <FileOutlined class="icon note-icon" />
+          </a>
         </div>
       </div>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <style scoped>
