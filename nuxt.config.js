@@ -17,13 +17,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'description' },
+      { name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'og:site_name', content: 'Kosen-Sparkle' },
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: 'https://kosen-sparkle.com' },
       { name: 'og:title', content: 'Kosen-Sparkle' },
-      { name: 'og:description', content: 'description' },
+      {
+        name: 'og:description',
+        content: '高専生による高専生のためのキャリア支援組織 "Kosen-Sparkle"',
+      },
       // NOTE: TwitterのシェアデバッガーやOGP確認サイトだと認識されないことがある (Facebookだと認識する？)
       { name: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
