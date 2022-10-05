@@ -59,9 +59,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 .title {
   font-weight: bold;
