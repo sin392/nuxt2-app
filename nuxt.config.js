@@ -17,7 +17,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: '' },
+      {
+        name: 'description',
+        content: '高専生による高専生のためのキャリア支援組織 "Kosen-Sparkle"',
+      },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'og:site_name', content: 'Kosen-Sparkle' },
       { name: 'og:type', content: 'website' },
@@ -27,11 +30,12 @@ export default {
         name: 'og:description',
         content: '高専生による高専生のためのキャリア支援組織 "Kosen-Sparkle"',
       },
+      // twitter用のtagはcardとタイトルだけあれば良いとか
       // NOTE: TwitterのシェアデバッガーやOGP確認サイトだと認識されないことがある (Facebookだと認識する？)
       { name: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Kosen-Sparkle HomePage' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
-      { name: 'twitter:image', content: '/ogp.png' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
