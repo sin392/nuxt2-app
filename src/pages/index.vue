@@ -24,8 +24,11 @@ import {
       <a href="https://twitter.com/KosenSparkle" target="_blank">
         <TwitterOutlined class="icon twitter-icon" />
       </a>
-      <a href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ">
-        <YoutubeOutlined class="icon youtube-icon" target="_blank" />
+      <a
+        href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
+        target="_blank"
+      >
+        <YoutubeOutlined class="icon youtube-icon" />
       </a>
       <a href="https://note.com/kosen_sparkle" target="_blank">
         <FileOutlined class="icon note-icon" />
