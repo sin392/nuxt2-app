@@ -24,7 +24,8 @@ export default {
       { name: 'og:url', content: 'https://kosen-sparkle.com' },
       { name: 'og:title', content: 'Kosen-Sparkle' },
       { name: 'og:description', content: 'description' },
-      { name: 'og:image', content: '/preview.png' },
+      // NOTE: 本来は/preview.pngでいいはずだがうまくいかない
+      { name: 'og:image', content: 'https://kosen-sparkle.com/preview.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
     ],
