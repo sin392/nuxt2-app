@@ -1,4 +1,4 @@
 [build]
-commend = "yarn generate"
+commend = "yarn lambda-build && yarn generate"
 functions = "netlify/built-functions"
 publish = "dist"
