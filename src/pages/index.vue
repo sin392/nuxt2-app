@@ -53,7 +53,6 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
 }
 .main-text {
   margin: 0;
-  font-family: 'Renner*';
   font-weight: bolder;
   font-size: 120px;
   letter-spacing: 5px;
@@ -64,7 +63,8 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
 .sub-text {
   font-size: 30px;
   text-align: center;
-  font-family: 'Renner*', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 .description {
   font-family: Courier, monospace;

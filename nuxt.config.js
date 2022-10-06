@@ -39,12 +39,6 @@ export default {
       { name: 'twitter:image', content: `${process.env.APP_URL}/ogp.png` },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    
-    // ロゴにしようしたFuturaと類似した Renner* を採用しました
-    link: [{rel: "stylesheet", 
-            href: "https://indestructibletype-fonthosting.github.io/renner.css",
-            type: "text/css",
-            charset: "utf-8"}],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
