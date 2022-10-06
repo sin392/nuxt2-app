@@ -14,8 +14,10 @@ exports.handler = async (event) => {
   const deployUrl = payload.deploy_url
   const text = `"${name}" is ${state}: ${title}`
 
-  let color = '#c0c0c0'
-  if (state === 'ready') {
+  let color = '#D00000'
+  if (state === 'building') {
+    color = '#c0c0c0'
+  } else if (state === 'ready') {
     color = '#00D000'
   }
 
