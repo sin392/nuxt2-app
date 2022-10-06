@@ -17,14 +17,16 @@
 <style scoped>
 header {
   width: 100%;
-  height: 65px;
+  height: 50px;
   padding: 0 40px;
   background-color: var(--main-bg-color);
   color: var(--font-color-on-main-bg);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 1px 1px 2px gray;
+  font-family: 'Renner*';
+  font-weight: medium;
+  text-shadow: 1px 1px 1px gray;
 }
 /* #header-title {
   font-size: xx-large;
@@ -37,9 +39,9 @@ ul {
 }
 li {
   height: fit-content !important;
-  font-size: x-large;
+  font-size: large;
   list-style-type: none;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 #header-title,
 li {
