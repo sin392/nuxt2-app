@@ -2,7 +2,7 @@
 
 Nuxt2 + Vue2 で作成された Kosen-Sparkle のホームページです。
 `production`と`staging`が Netlify 上にホストされています。
-(PR立てるとプレビュー用のビルドも行われます)
+(PR 立てるとプレビュー用のビルドも行われます)
 
 ## 環境変数の設定について
 
@@ -24,7 +24,7 @@ netlify.toml は github で共有するため API_KEY などの環境変数に�
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:5000
 $ yarn dev
 
 # build for production and launch server
