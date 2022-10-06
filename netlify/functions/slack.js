@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
   const state = payload.state
   const branch = payload.branch
   const title = payload.title
-  const deployUrl = payload.deployUrl
+  const deployUrl = payload.deploy_url
   const text = `App is ${state}: <${deployUrl}>`
 
   return await fetch(process.env.SLACK_WEBHOOK_URL, {
