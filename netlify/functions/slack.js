@@ -13,11 +13,10 @@ exports.handler = async (event) => {
   const title = payload.title
   const deployUrl = payload.deploy_url
   const text = `"${name}" is ${state}: ${title}`
+
   let color = '#c0c0c0'
   if (state === 'ready') {
     color = '#00D000'
-  } else {
-    color = '#D00000'
   }
 
   return await fetch(process.env.SLACK_WEBHOOK_URL, {
