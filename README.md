@@ -31,6 +31,20 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+## Build Notifications
+
+Slack の webhook と Netlify のサーバレス関数のホスト機能を使って slack チャンネルに通知を飛ばす。  
+`/netlify`以下のフォルダ・ファイルはこの関連  
+ビルド済みのサーバレス関数のディレクトリは netlify.toml の functions で指定
+
+### Netlify のサーバレス関数のビルド
+
+`/netlify/functions`以下のファイルを編集した場合はデプロイ前に以下を実行してサーバレス関数をビルドする。
+
+```
+yarn lambda-build
+```
+
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
