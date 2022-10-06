@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { EMAIL, EMAIL_HREF } from '~/consts/contact'
+import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
+</script>
+
 <template>
   <div class="wrapper">
     <p class="title">お問い合わせ先</p>
@@ -5,28 +10,21 @@
       <div class="info-wrapper">
         <p class="info">
           <span class="label">Email:</span>
-          <a href="mailto:kosen.sparkle@gmail.com">kosen.sparkle@gmail.com</a>
+          <a :href="EMAIL_HREF">{{ EMAIL }}</a>
         </p>
         <p class="info">
           <span class="label">Twitter:</span>
-          <a href="https://twitter.com/KosenSparkle" target="_blank">
+          <a :href="TWITTER_URL" target="_blank">
             Kosen-Sparkle (@kosen_sparkle)
           </a>
         </p>
         <p class="info">
           <span class="label">Youtube:</span>
-          <a
-            href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
-            target="_blank"
-          >
-            Kosen-Sparkleチャンネル
-          </a>
+          <a :href="YOUTUBE_URL" target="_blank">Kosen-Sparkleチャンネル</a>
         </p>
         <p class="info">
           <span class="label">Note:</span>
-          <a href="https://note.com/kosen_sparkle" target="_blank">
-            Kosen_Sparkle
-          </a>
+          <a :href="NOTE_URL" target="_blank">Kosen_Sparkle</a>
         </p>
       </div>
       <div class="announce">

@@ -23,7 +23,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'og:site_name', content: 'Kosen-Sparkle' },
       { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://kosen-sparkle.com' },
+      { name: 'og:url', content: process.env.APP_URL },
       { name: 'og:title', content: 'Kosen-Sparkle' },
       {
         name: 'og:description',
@@ -35,7 +35,8 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Kosen-Sparkle HomePage' },
       { name: 'twitter:site', content: '@kosen_sparkle' },
-      { name: 'twitter:image', content: 'https://kosen-sparkle.com/ogp.png' },
+      // NOTE: TwitterはbaseUrl記載しないと動かなかった（ドキュメントとかには記載ない）
+      { name: 'twitter:image', content: `${process.env.APP_URL}/ogp.png` },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -64,7 +65,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    // Workaround to avoid enforcing hard-coded localhost:5000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 

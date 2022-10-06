@@ -4,6 +4,7 @@ import {
   YoutubeOutlined,
   FileOutlined,
 } from '@ant-design/icons-vue/lib'
+import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
 </script>
 
 <template>
@@ -21,16 +22,13 @@ import {
       </p>
     </div>
     <div class="contacts">
-      <a href="https://twitter.com/KosenSparkle" target="_blank">
+      <a :href="TWITTER_URL" target="_blank">
         <TwitterOutlined class="icon twitter-icon" />
       </a>
-      <a
-        href="https://www.youtube.com/channel/UC6f6GjgVmP55cvLZ2T7FpfQ"
-        target="_blank"
-      >
+      <a :href="YOUTUBE_URL" target="_blank">
         <YoutubeOutlined class="icon youtube-icon" />
       </a>
-      <a href="https://note.com/kosen_sparkle" target="_blank">
+      <a :href="NOTE_URL" target="_blank">
         <FileOutlined class="icon note-icon" />
       </a>
     </div>
