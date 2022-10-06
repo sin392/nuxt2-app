@@ -1,18 +1,24 @@
 // ref: https://qiita.com/tokimeki40/items/72897c700693464bc15b
 import fetch from 'node-fetch'
 
-exports.handler = async (event, context) => {
+exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' }
   }
   const payload = JSON.parse(event.body)
   console.log('payload', payload)
-  console.log('context', context)
+  const name = payload.name
   const state = payload.state
   const branch = payload.branch
   const title = payload.title
   const deployUrl = payload.deploy_url
-  const text = `App is ${state}: <${deployUrl}>`
+  const text = `"${name}" is ${state}: ${title}`
+  let color = '#c0c0c0'
+  if (state === 'ready') {
+    color = '#00D000'
+  } else {
+    color = '#D00000'
+  }
 
   return await fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
@@ -24,11 +30,11 @@ exports.handler = async (event, context) => {
         {
           fallback: text,
           pretext: text,
-          color: '#00D000',
+          color,
           fields: [
             {
               title: branch,
-              value: title,
+              value: `<${deployUrl}>`,
               short: false,
             },
           ],
