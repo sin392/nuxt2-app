@@ -1,5 +1,13 @@
+const envPath = `.env.${process.env.NODE_ENV || 'local'}`
+require('dotenv').config({ path: envPath })
+
 export default {
   srcDir: 'src/',
+
+  // srcDir変更時,envの設定も変更する必要: https://www.memory-lovers.blog/entry/2020/01/23/110000
+  dotenv: {
+    path: process.cwd(),
+  },
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -61,6 +69,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
