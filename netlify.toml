@@ -1,0 +1,4 @@
+[build]
+commend = "yarn generate"
+functions = "netlify/built-functions"
+publish = "dist"
