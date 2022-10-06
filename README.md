@@ -1,7 +1,8 @@
 # nuxt2-app
 
 Nuxt2 + Vue2 で作成された Kosen-Sparkle のホームページです。
-`main`と`develop`が Netlify 上にホストされています。
+`production`と`staging`が Netlify 上にホストされています。
+(PR立てるとプレビュー用のビルドも行われます)
 
 ## 環境変数の設定について
 
@@ -11,11 +12,11 @@ netlify.toml は github で共有するため API_KEY などの環境変数に�
 ## Links
 
 - Netlify 管理画面: https://app.netlify.com/sites/kosen-sparkle/overview
-- main 環境:
-  - https://main--kosen-sparkle.netlify.app/
+- production 環境:
+  - https://production--kosen-sparkle.netlify.app/
   - https://kosen-sparkle.com
-- develop 環境:
-  - https://develop--kosen-sparkle.netlify.app/
+- staging 環境:
+  - https://staging--kosen-sparkle.netlify.app/
 
 ## Build Setup
 
