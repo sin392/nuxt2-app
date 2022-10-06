@@ -3,6 +3,11 @@
 Nuxt2 + Vue2 で作成された Kosen-Sparkle のホームページです。
 `main`と`develop`が Netlify 上にホストされています。
 
+## 環境変数の設定について
+
+netlify.toml は github で共有するため API_KEY などの環境変数については管理画面で登録する
+(ローカルでは.env などを使用)
+
 ## Links
 
 - Netlify 管理画面: https://app.netlify.com/sites/kosen-sparkle/overview
