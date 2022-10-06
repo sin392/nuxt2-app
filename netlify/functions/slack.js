@@ -11,13 +11,30 @@ exports.handler = async (event, context) => {
   const state = payload.state
   const branch = payload.branch
   const title = payload.title
+  const deployUrl = payload.deployUrl
+  const text = `App is ${state}: <${deployUrl}>`
 
   return await fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
       'content-type': 'application/json',
     },
     method: 'POST',
-    body: JSON.stringify({ text: `[${branch}] (${title}) site is ${state}` }),
+    body: JSON.stringify({
+      attachments: [
+        {
+          fallback: text,
+          pretext: text,
+          color: '#00D000',
+          fields: [
+            {
+              title: branch,
+              value: title,
+              short: false,
+            },
+          ],
+        },
+      ],
+    }),
   })
     .then(() => ({
       statusCode: 200,
