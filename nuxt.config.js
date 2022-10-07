@@ -46,7 +46,27 @@ export default {
       // NOTE: TwitterはbaseUrl記載しないと動かなかった（ドキュメントとかには記載ない）
       { name: 'twitter:image', content: `${process.env.APP_URL}/ogp.png` },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preload',
+        href: '/member-shinorin-256.webp',
+        as: 'image',
+        type: 'image/webp',
+      },
+      {
+        rel: 'preload',
+        href: '/member-mine-256.webp',
+        as: 'image',
+        type: 'image/webp',
+      },
+      {
+        rel: 'preload',
+        href: '/member-zaki-256.webp',
+        as: 'image',
+        type: 'image/webp',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
