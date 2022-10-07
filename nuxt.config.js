@@ -50,19 +50,19 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'preload',
-        href: '~/assets/member-shinorin-256.webp',
+        href: '_nuxt/src/assets/member-shinorin-256.webp',
         as: 'image',
         type: 'image/webp',
       },
       {
         rel: 'preload',
-        href: '~/assets/member-mine-256.webp',
+        href: '_nuxt/src/assets/member-mine-256.webp',
         as: 'image',
         type: 'image/webp',
       },
       {
         rel: 'preload',
-        href: '~/assets/member-zaki-256.webp',
+        href: '_nuxt/src/assets/member-zaki-256.webp',
         as: 'image',
         type: 'image/webp',
       },
