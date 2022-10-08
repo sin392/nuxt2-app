@@ -20,8 +20,8 @@ const path = computed(() => {
         <li :selected="path === '/member'">
           <NuxtLink to="/member">MEMBER</NuxtLink>
         </li>
-        <li :selected="path === '/work'">
-          <NuxtLink to="/work">WORK</NuxtLink>
+        <li :selected="path === '/content'">
+          <NuxtLink to="/content">CONTENT</NuxtLink>
         </li>
         <li :selected="path === '/contact'">
           <NuxtLink to="/contact">CONTACT</NuxtLink>

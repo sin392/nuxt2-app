@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { EMAIL, EMAIL_HREF } from '~/consts/contact'
-import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
+import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
 </script>
 
 <template>
@@ -24,7 +24,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_URL } from '~/consts/url'
         </p>
         <p class="info">
           <span class="label">Note:</span>
-          <a :href="NOTE_URL" target="_blank">Kosen_Sparkle</a>
+          <a :href="NOTE_CREATOR_URL" target="_blank">Kosen_Sparkle</a>
         </p>
       </div>
       <div class="announce">

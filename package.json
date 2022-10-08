@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nuxt --port 5000",
     "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
+    "start": "nuxt start --port 5000",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
