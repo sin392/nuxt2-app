@@ -62,7 +62,7 @@ useFetch(async () => {
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   overflow-y: scroll;
   /* スクロールバーの非表示 (IE, Edge, Safari) */
   -ms-overflow-style: none;
@@ -74,8 +74,9 @@ useFetch(async () => {
 }
 .article-card {
   display: flex;
-  border: 1px solid;
   height: calc(670px / 6);
+  border: 1px solid darkgray;
+  /* box-shadow: 0 0 10px darkgray; */
 }
 .article-card > a {
   width: 100%;
@@ -83,18 +84,19 @@ useFetch(async () => {
   color: inherit;
 }
 .image-wrapper {
+  min-width: calc(1280px / 6);
   width: calc(1280px / 6);
-  border: 1px solid;
-}
-img {
-  height: 100%;
-}
-.noimage {
-  width: calc(1280px / 6);
-  line-height: calc(670px / 6);
   text-align: center;
   background-color: darkgray;
+  display: flex;
+}
+img {
+  width: 100%;
+}
+.noimage {
+  margin: auto;
   color: whitesmoke;
+  object-fit: contain;
 }
 .text-wrapper {
   padding: 10px 20px;
@@ -109,7 +111,7 @@ img {
 }
 .body {
   flex-grow: 1;
-  padding: 2px 0;
+  padding: 4px 0;
   font-size: medium;
   overflow: hidden;
   overflow-wrap: break-word;
