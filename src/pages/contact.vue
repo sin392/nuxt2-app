@@ -1,30 +1,35 @@
 <script setup lang="ts">
 import { EMAIL, EMAIL_HREF } from '~/consts/contact'
 import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
+
+interface ContactType {
+  label: string
+  name: string
+  href: string
+}
+
+const CONTACTS: ContactType[] = [
+  { label: 'Email', name: EMAIL, href: EMAIL_HREF },
+  {
+    label: 'Twitter',
+    name: 'Kosen-Sparkle (@kosen_sparkle)',
+    href: TWITTER_URL,
+  },
+  { label: 'Youtube', name: 'Kosen-Sparkleチャンネル', href: YOUTUBE_URL },
+  { label: 'Note', name: 'Kosen_Sparkle', href: NOTE_CREATOR_URL },
+]
 </script>
 
 <template>
-  <div class="wrapper">
-    <p class="title">お問い合わせ先</p>
-    <div class="flex-wrapper">
-      <div class="info-wrapper">
-        <p class="info">
-          <span class="label">Email:</span>
-          <a :href="EMAIL_HREF">{{ EMAIL }}</a>
-        </p>
-        <p class="info">
-          <span class="label">Twitter:</span>
-          <a :href="TWITTER_URL" target="_blank">
-            Kosen-Sparkle (@kosen_sparkle)
+  <div class="contact-page">
+    <h1 class="title">お問い合わせ先</h1>
+    <div class="body">
+      <div class="contacts">
+        <p v-for="item in CONTACTS" :key="item.name" class="contact-item">
+          <span class="contact-label">{{ item.label }}:</span>
+          <a :href="item.href" target="_blank">
+            {{ item.name }}
           </a>
-        </p>
-        <p class="info">
-          <span class="label">Youtube:</span>
-          <a :href="YOUTUBE_URL" target="_blank">Kosen-Sparkleチャンネル</a>
-        </p>
-        <p class="info">
-          <span class="label">Note:</span>
-          <a :href="NOTE_CREATOR_URL" target="_blank">Kosen_Sparkle</a>
         </p>
       </div>
       <div class="announce">
@@ -41,35 +46,31 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
 </template>
 
 <style scoped>
-.wrapper {
+.contact-page {
   width: 60%;
   height: 80%;
   margin: auto;
   box-shadow: 0 0 5px darkgray;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.flex-wrapper {
+.body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  gap: 20px;
 }
 .title {
   font-weight: bold;
   font-size: x-large;
   text-align: center;
+  color: inherit;
+  margin-bottom: 32px;
 }
-.info-wrapper {
-  padding: 0 150px;
+.contacts {
   font-size: large;
 }
-.label {
+.contact-label {
   display: inline-block;
   width: 6rem;
   letter-spacing: 2px;
@@ -80,7 +81,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
   flex-direction: column;
   align-items: center;
 }
-ul {
+.announce ul {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -88,23 +89,23 @@ ul {
   gap: 10px;
   margin: auto;
 }
-li {
+.announce li {
   font-size: x-large;
   font-weight: bold;
 }
 @media (max-width: 480px) {
-  .wrapper {
+  .contact-page {
     width: 80%;
   }
   .title {
     margin: 0;
   }
-  .flex-wrapper {
+  .body {
     width: 100%;
     padding-bottom: 0;
     flex-grow: 0;
   }
-  .info-wrapper {
+  .contacts {
     padding: 0 100px;
     font-size: small;
   }
@@ -119,13 +120,13 @@ li {
     font-size: smaller;
     margin-top: 20px;
   }
-  ul {
+  .announce ul {
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 5px;
     padding-left: 10px;
   }
-  li {
+  .announce li {
     font-size: smaller;
     font-weight: bold;
   }

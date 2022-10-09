@@ -20,11 +20,11 @@ useFetch(async () => {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div>- Note Articles -</div>
-    <div class="articles-list">
+  <div class="content-page">
+    <h1 class="title">- Note Articles -</h1>
+    <div class="articles-list scroll">
       <div v-for="content in contents" :key="content.id" class="article-card">
-        <a :href="content.noteUrl" target="_brank">
+        <a :href="content.noteUrl" target="_blank">
           <div class="image-wrapper">
             <img
               v-if="content.eyecatch"
@@ -33,9 +33,9 @@ useFetch(async () => {
             />
             <div v-if="!content.eyecatch" class="noimage">NO IMAGE</div>
           </div>
-          <div class="text-wrapper">
-            <div class="title">{{ content.name }}</div>
-            <div class="body">{{ content.body }}</div>
+          <div class="article-description">
+            <div class="article-title">{{ content.name }}</div>
+            <div class="article-body">{{ content.body }}</div>
           </div>
         </a>
       </div>
@@ -43,40 +43,46 @@ useFetch(async () => {
   </div>
 </template>
 
-<style scoped>
-.wrapper {
+<style scoped lang="scss">
+$article-image-height: calc(670px / 6);
+$article-image-width: calc(1280px / 6);
+
+.content-page {
   width: 60%;
   height: 80%;
   margin: auto;
   box-shadow: 0 0 5px darkgray;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+  padding: 20px;
   font-size: xx-large;
   font-weight: bold;
 }
+.title {
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  color: inherit;
+  margin-bottom: 22px;
+}
 .articles-list {
   width: 100%;
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.scroll {
   overflow-y: scroll;
   /* スクロールバーの非表示 (IE, Edge, Safari) */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.articles-list::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   /* スクロールバーの非表示 (Chrome, Safari)*/
   display: none;
 }
 .article-card {
   display: flex;
-  height: calc(670px / 6);
+  height: $article-image-height;
   border: 1px solid darkgray;
-  /* box-shadow: 0 0 10px darkgray; */
 }
 .article-card > a {
   width: 100%;
@@ -84,9 +90,8 @@ useFetch(async () => {
   color: inherit;
 }
 .image-wrapper {
-  min-width: calc(1280px / 6);
-  width: calc(1280px / 6);
-  text-align: center;
+  flex-shrink: 0;
+  width: $article-image-width;
   background-color: darkgray;
   display: flex;
 }
@@ -96,20 +101,19 @@ img {
 .noimage {
   margin: auto;
   color: whitesmoke;
-  object-fit: contain;
 }
-.text-wrapper {
+.article-description {
   padding: 10px 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
-.title {
+.article-title {
   font-size: 24px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.body {
+.article-body {
   flex-grow: 1;
   padding: 4px 0;
   font-size: medium;
@@ -120,7 +124,7 @@ img {
   /* height: 50px; */
 }
 @media (max-width: 480px) {
-  .wrapper {
+  .content-page {
     width: 80%;
   }
 }
