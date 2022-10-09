@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from '@nuxtjs/composition-api'
-interface PeopleCardProps {
+export interface MemberCardProps {
   name: string
   hobby: string
   skill: string
@@ -8,7 +8,7 @@ interface PeopleCardProps {
   imgFileName: string
 }
 
-const props = defineProps<PeopleCardProps>()
+const props = defineProps<MemberCardProps>()
 // NOTE: "assetsに画像を置いている場合"、imgSrcをそのまま:srcに渡したりrequire(imgSrc)とするのはうまくいかなかった
 // const imgSrc = require(`~/assets/${props.imgFileName}`)
 // NOTE: SSGだとデプロイ後に初回fetchは成功するがreloadすると画像が消える

@@ -1,7 +1,7 @@
-<script setup>
-import MemberCard from '~/components/member-card'
+<script setup lang="ts">
+import MemberCard, { MemberCardProps } from '~/components/member-card.vue'
 
-const MEMBERS = [
+const MEMBERS: MemberCardProps[] = [
   {
     name: 'しのりん',
     hobby: '旅行 / 英語 / 個人開発',
