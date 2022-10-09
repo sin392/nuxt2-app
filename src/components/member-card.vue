@@ -22,13 +22,11 @@ const imgSrc = computed(() => `/${props.imgFileName}`)
     </div>
     <div class="people-card-content">
       <p class="name">{{ name }}</p>
-      <div class="info-wrapper">
-        <div class="info"><span class="label">趣味：</span>{{ hobby }}</div>
-        <div class="info"><span class="label">得意分野：</span>{{ skill }}</div>
-        <div class="info">
-          <span class="label">ひとこと：</span>{{ comment }}
-        </div>
-      </div>
+      <ul class="info-list">
+        <li class="info"><span class="label">趣味：</span>{{ hobby }}</li>
+        <li class="info"><span class="label">得意分野：</span>{{ skill }}</li>
+        <li class="info"><span class="label">ひとこと：</span>{{ comment }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -65,11 +63,14 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.info-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.info-list {
+  padding: 0;
+  margin: 0;
   font-size: large;
+}
+.info {
+  list-style: none;
+  margin-bottom: 5px;
 }
 .label {
   display: inline-block;

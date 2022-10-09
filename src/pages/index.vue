@@ -8,10 +8,12 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="main-part">
-      <h1 class="main-text">KOSEN <span class="accent-char">S</span>PARKLE</h1>
-      <p class="sub-text">For the Kosen, By the Kosen, Student Organization</p>
+  <div class="root-page">
+    <div class="eyecatch">
+      <h1 class="title">
+        KOSEN <span class="title-accent-char">S</span>PARKLE
+      </h1>
+      <p class="slogan">For the Kosen, By the Kosen, Student Organization</p>
     </div>
     <div class="description">
       <p>
@@ -21,7 +23,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
         高専生の様々なお悩みを解決すべく情報発信などを行なっていく予定です!!
       </p>
     </div>
-    <div class="contacts">
+    <div class="links">
       <a :href="TWITTER_URL" target="_blank">
         <no-ssr><TwitterOutlined class="icon twitter-icon" /></no-ssr>
       </a>
@@ -36,7 +38,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
 </template>
 
 <style scoped>
-.wrapper {
+.root-page {
   width: 80%;
   height: 80%;
   margin: auto;
@@ -46,21 +48,21 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
   justify-content: center;
   gap: 20px;
 }
-.main-part {
+.eyecatch {
   margin: 0;
   padding-top: 80px;
   user-select: none;
 }
-.main-text {
+.title {
   margin: 0;
   font-weight: bolder;
   font-size: 120px;
   letter-spacing: 5px;
 }
-.accent-char {
+.title-accent-char {
   color: var(--main-bg-color);
 }
-.sub-text {
+.slogan {
   font-size: 30px;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -73,7 +75,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
   align-items: center;
   font-size: large;
 }
-.contacts {
+.links {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -97,14 +99,14 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
   transform: scale(-1, 1);
 }
 @media (max-width: 480px) {
-  .wrapper {
+  .root-page {
     max-height: 100%;
     justify-content: start;
   }
-  .main-part {
+  .eyecatch {
     padding-top: 0;
   }
-  .main-text {
+  .title {
     font-size: 65px;
     line-height: 70px;
   }
@@ -115,10 +117,9 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
   .description {
     gap: 30px;
   }
-  .contacts {
+  .links {
     flex-grow: 1;
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-end;
     padding-bottom: 20px;
   }
