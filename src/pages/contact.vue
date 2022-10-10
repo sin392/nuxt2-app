@@ -109,10 +109,10 @@ const CONTACTS: ContactType[] = [
     padding: 0 100px;
     font-size: small;
   }
-  .info {
+  .contact-item {
     margin: 0;
   }
-  .label {
+  .contact-label {
     display: block;
   }
   .announce {

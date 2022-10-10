@@ -110,7 +110,7 @@ import { TWITTER_URL, YOUTUBE_URL, NOTE_CREATOR_URL } from '~/consts/url'
     font-size: 65px;
     line-height: 70px;
   }
-  .sub-text {
+  .slogan {
     padding-top: 10px;
     font-size: 13px;
   }

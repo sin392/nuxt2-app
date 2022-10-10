@@ -9,7 +9,6 @@ const path = computed(() => {
 
 <template>
   <header>
-    <!-- <div id="header-title">KSparkle</div> -->
     <nav>
       <ul>
         <!-- TODO: トップへの遷移はnavではなくロゴ画像とかで -->
@@ -43,9 +42,6 @@ header {
   align-items: center;
   text-shadow: 1px 1px 2px gray;
 }
-/* #header-title {
-  font-size: xx-large;
-} */
 ul {
   padding: 0;
   margin: 0;
@@ -58,7 +54,6 @@ li {
   list-style-type: none;
   letter-spacing: 0.5rem;
 }
-#header-title,
 li {
   user-select: none;
 }
@@ -78,7 +73,7 @@ li[selected] a {
     gap: 10px;
   }
   li {
-    font-size: large;
+    font-size: larger;
     letter-spacing: normal;
   }
 }

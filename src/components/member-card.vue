@@ -92,7 +92,7 @@ img {
   .people-card-content {
     padding: 10px 20px;
   }
-  .info-wrapper {
+  .info-list {
     display: flex;
     flex-direction: column;
     gap: 5px;
